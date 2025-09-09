@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "module": "nodenext",
+    "module": "es2022",
     "esModuleInterop": true,
     "target": "esnext",
     "sourceMap": true,
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "bundler",
     "outDir": "dist"
   },
   "extends": "@tsconfig/node24/tsconfig.json",
-  "lib": ["esnext"]
+  "lib": [
+    "esnext"
+  ]
 }
