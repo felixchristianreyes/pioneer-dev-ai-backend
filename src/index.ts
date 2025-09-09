@@ -1,12 +1,12 @@
 import express from "express";
 import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
-import { authMiddleware } from "./middlewares/auth";
+import { authMiddleware } from "./middlewares/auth.js";
 import {
   placesResponseSchema,
   restaurantDetailSchema,
-} from "./schemas/restaurant.schema";
-import { PlacesResponse, QueryParams } from "./types/restaurant.type";
+} from "./schemas/restaurant.schema.js";
+import { PlacesResponse, QueryParams } from "./types/restaurant.type.js";
 import { Request, Response } from "express";
 
 const openai = new OpenAI({
